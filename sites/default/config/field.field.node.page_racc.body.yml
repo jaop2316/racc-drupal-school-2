@@ -1,0 +1,22 @@
+uuid: 3b3d1cdd-36d5-43e4-b87b-9de019370d61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_racc
+  module:
+    - text
+id: node.page_racc.body
+field_name: body
+entity_type: node
+bundle: page_racc
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

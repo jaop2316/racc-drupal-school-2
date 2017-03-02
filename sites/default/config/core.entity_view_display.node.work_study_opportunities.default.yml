@@ -1,0 +1,99 @@
+uuid: 381b98b7-306b-4844-98cb-87334b3d4ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.work_study_opportunities.body
+    - field.field.node.work_study_opportunities.field_contact
+    - field.field.node.work_study_opportunities.field_departament
+    - field.field.node.work_study_opportunities.field_dept_location
+    - field.field.node.work_study_opportunities.field_email
+    - field.field.node.work_study_opportunities.field_hours
+    - field.field.node.work_study_opportunities.field_office_phone
+    - field.field.node.work_study_opportunities.field_pay_rate
+    - field.field.node.work_study_opportunities.field_post_date
+    - field.field.node.work_study_opportunities.field_term
+    - node.type.work_study_opportunities
+  module:
+    - datetime
+    - text
+    - user
+id: node.work_study_opportunities.default
+targetEntityType: node
+bundle: work_study_opportunities
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_departament:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_dept_location:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_email:
+    weight: 9
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_hours:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_office_phone:
+    weight: 10
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_pay_rate:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_post_date:
+    weight: 1
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_term:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

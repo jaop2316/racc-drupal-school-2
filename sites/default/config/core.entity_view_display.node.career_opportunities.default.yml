@@ -1,0 +1,110 @@
+uuid: 972a4593-acb8-4d6c-969e-8fb264c18e9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_opportunities.body
+    - field.field.node.career_opportunities.field_announce_date
+    - field.field.node.career_opportunities.field_aplication_instructions
+    - field.field.node.career_opportunities.field_aplication_status
+    - field.field.node.career_opportunities.field_apply_by_date_
+    - field.field.node.career_opportunities.field_background_check
+    - field.field.node.career_opportunities.field_classification
+    - field.field.node.career_opportunities.field_full_time_position
+    - field.field.node.career_opportunities.field_inmediate_need
+    - field.field.node.career_opportunities.field_position_type
+    - field.field.node.career_opportunities.field_salary
+    - node.type.career_opportunities
+  module:
+    - datetime
+    - text
+    - user
+id: node.career_opportunities.default
+targetEntityType: node
+bundle: career_opportunities
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+  field_announce_date:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_aplication_instructions:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_aplication_status:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_apply_by_date_:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_background_check:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_classification:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_full_time_position:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_inmediate_need:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_position_type:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_salary:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

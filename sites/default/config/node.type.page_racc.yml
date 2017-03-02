@@ -1,0 +1,18 @@
+uuid: 43fa4dd5-e2b6-43ef-9621-1e7959443411
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Page
+type: page_racc
+description: 'Use for create a new page with title , body and image'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

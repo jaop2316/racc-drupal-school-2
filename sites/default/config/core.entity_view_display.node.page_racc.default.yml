@@ -1,0 +1,28 @@
+uuid: ec075ab2-5282-409f-95cc-5f9e3ba6eabf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_racc.body
+    - field.field.node.page_racc.field_image
+    - node.type.page_racc
+  module:
+    - text
+    - user
+id: node.page_racc.default
+targetEntityType: node
+bundle: page_racc
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image: true

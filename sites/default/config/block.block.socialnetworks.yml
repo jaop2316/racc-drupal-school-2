@@ -1,0 +1,24 @@
+uuid: 47049b7c-72dd-45da-8d37-2943a70c1942
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-networks
+  module:
+    - system
+  theme:
+    - bartik
+id: socialnetworks
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-networks'
+settings:
+  id: 'system_menu_block:social-networks'
+  label: 'Social Networks'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

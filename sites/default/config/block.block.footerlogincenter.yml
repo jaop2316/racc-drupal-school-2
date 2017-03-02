@@ -1,0 +1,24 @@
+uuid: 736f2aa8-9e5c-4911-a1ba-c9b56c7f0b07
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-logincenter
+  module:
+    - system
+  theme:
+    - bartik
+id: footerlogincenter
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-logincenter'
+settings:
+  id: 'system_menu_block:footer-logincenter'
+  label: Footer-LoginCenter
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

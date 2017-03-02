@@ -1,0 +1,24 @@
+uuid: 5a803858-b418-46c7-9808-31682563c894
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-contactinfo
+  module:
+    - system
+  theme:
+    - bartik
+id: footercontactinfo
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-contactinfo'
+settings:
+  id: 'system_menu_block:footer-contactinfo'
+  label: Footer-ContactInfo
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,37 @@
+uuid: 669f5841-a63f-4863-9829-04a2c162e879
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student.body
+    - field.field.node.student.field_image
+    - node.type.student
+    - responsive_image.styles.student_responsive
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.student.default
+targetEntityType: node
+bundle: student
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: responsive_image
+    weight: 1
+    label: above
+    settings:
+      responsive_image_style: student_responsive
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

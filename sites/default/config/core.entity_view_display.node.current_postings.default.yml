@@ -1,0 +1,74 @@
+uuid: e1dc975f-77ba-4142-a496-8ffffaf8d005
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.current_postings.body
+    - field.field.node.current_postings.field_bid_bond
+    - field.field.node.current_postings.field_departament
+    - field.field.node.current_postings.field_due_date
+    - field.field.node.current_postings.field_performance_bond
+    - field.field.node.current_postings.field_post_date
+    - field.field.node.current_postings.field_proposal_number
+    - node.type.current_postings
+  module:
+    - datetime
+    - text
+    - user
+id: node.current_postings.default
+targetEntityType: node
+bundle: current_postings
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_bid_bond:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_departament:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_due_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_performance_bond:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_post_date:
+    weight: 0
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_proposal_number:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  links: true

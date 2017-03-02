@@ -1,0 +1,17 @@
+uuid: 85ce964a-d0cf-40fe-9c80-abf262c71b44
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.faculty_and_staff_
+  module:
+    - user
+id: node.faculty_and_staff_.teaser
+targetEntityType: node
+bundle: faculty_and_staff_
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

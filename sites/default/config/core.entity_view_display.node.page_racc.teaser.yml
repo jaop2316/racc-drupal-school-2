@@ -1,0 +1,26 @@
+uuid: 455465fd-a96c-49ae-bd91-d17622f05125
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_racc.body
+    - node.type.page_racc
+  module:
+    - text
+    - user
+id: node.page_racc.teaser
+targetEntityType: node
+bundle: page_racc
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }
