@@ -1,0 +1,74 @@
+uuid: 4246f328-619b-4b7a-96d5-f6c3db294234
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.test
+    - views.view.carrer_opportunities
+  module:
+    - panels
+    - views
+id: test-panels_variant-0
+label: 'Carrer Opportunities'
+variant: panels_variant
+variant_settings:
+  blocks:
+    e4bd77d2-478a-418c-b776-990649e86f05:
+      id: 'views_block:carrer_opportunities-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 0
+      uuid: e4bd77d2-478a-418c-b776-990649e86f05
+      context_mapping: {  }
+    ba6515d7-311b-484d-b663-24fddf427122:
+      id: 'views_block:carrer_opportunities-block_2'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 1
+      uuid: ba6515d7-311b-484d-b663-24fddf427122
+      context_mapping: {  }
+    e8b0d736-e4be-4a71-8516-a1d576b55bb4:
+      id: 'views_block:carrer_opportunities-block_3'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 2
+      uuid: e8b0d736-e4be-4a71-8516-a1d576b55bb4
+      context_mapping: {  }
+    0427d102-b735-4084-8095-1ef8f7f04fad:
+      id: 'views_block:carrer_opportunities-block_4'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 3
+      uuid: 0427d102-b735-4084-8095-1ef8f7f04fad
+      context_mapping: {  }
+  id: panels_variant
+  uuid: aff33088-bd06-4851-a46c-bb331fb541b1
+  label: null
+  weight: 0
+  layout: onecol
+  layout_settings: {  }
+  page_title: 'Carrer Opportunities'
+  storage_type: page_manager
+  storage_id: test-panels_variant-0
+  builder: standard
+page: test
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

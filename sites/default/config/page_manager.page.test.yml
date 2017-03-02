@@ -1,0 +1,12 @@
+uuid: b28af40b-f9ae-49ea-8197-9e77fc601434
+langcode: en
+status: true
+dependencies: {  }
+id: test
+label: Test
+description: ''
+use_admin_theme: false
+path: /test
+access_logic: and
+access_conditions: {  }
+parameters: {  }
