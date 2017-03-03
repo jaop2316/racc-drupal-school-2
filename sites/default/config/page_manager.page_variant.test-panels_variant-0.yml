@@ -5,7 +5,12 @@ dependencies:
   config:
     - page_manager.page.test
     - views.view.carrer_opportunities
+  content:
+    - 'block_content:basic:408fbfcd-688b-4b4f-b534-19f0fdf5825b'
+    - 'block_content:basic:591b3787-47d5-4f7b-ba50-ebd1488432b5'
+    - 'block_content:basic:6d45fbdb-9e66-4afb-ac1a-bacee64ddffc'
   module:
+    - block_content
     - panels
     - views
 id: test-panels_variant-0
@@ -17,11 +22,11 @@ variant_settings:
       id: 'views_block:carrer_opportunities-block_1'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
       region: middle
-      weight: 0
+      weight: -2
       uuid: e4bd77d2-478a-418c-b776-990649e86f05
       context_mapping: {  }
     ba6515d7-311b-484d-b663-24fddf427122:
@@ -56,6 +61,42 @@ variant_settings:
       region: middle
       weight: 3
       uuid: 0427d102-b735-4084-8095-1ef8f7f04fad
+      context_mapping: {  }
+    91fd94b6-c141-4487-b828-7ff3ae63fb0e:
+      id: 'block_content:6d45fbdb-9e66-4afb-ac1a-bacee64ddffc'
+      label: 'Immediate Need'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: -3
+      uuid: 91fd94b6-c141-4487-b828-7ff3ae63fb0e
+      context_mapping: {  }
+    24b7a92c-bba6-490e-a4d4-09877e1507a2:
+      id: 'block_content:408fbfcd-688b-4b4f-b534-19f0fdf5825b'
+      label: 'Diversity Statement'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: -1
+      uuid: 24b7a92c-bba6-490e-a4d4-09877e1507a2
+      context_mapping: {  }
+    0c2c59cc-570f-4248-8291-5f14a3bd79a8:
+      id: 'block_content:591b3787-47d5-4f7b-ba50-ebd1488432b5'
+      label: 'Career Opportunities Listing'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: 0
+      uuid: 0c2c59cc-570f-4248-8291-5f14a3bd79a8
       context_mapping: {  }
   id: panels_variant
   uuid: aff33088-bd06-4851-a46c-bb331fb541b1

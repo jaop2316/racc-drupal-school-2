@@ -722,8 +722,32 @@ display:
         options:
           field_options:
             title:
-              alias: ''
-              raw_output: false
+              alias: title
+              raw_output: true
+            field_aplication_instructions:
+              alias: aplication_instructions
+              raw_output: true
+            field_background_check:
+              alias: background_check
+              raw_output: true
+            field_announce_date:
+              alias: announce_date
+              raw_output: true
+            field_apply_by_date_:
+              alias: apply_by_date
+              raw_output: true
+            field_aplication_status:
+              alias: aplication_status
+              raw_output: true
+            field_position_type:
+              alias: position_type
+              raw_output: true
+            field_salary:
+              alias: salary
+              raw_output: true
+            body:
+              alias: summary
+              raw_output: true
     cache_metadata:
       max-age: -1
       contexts:
