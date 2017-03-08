@@ -11,7 +11,7 @@ dependencies:
 id: socialnetworks
 theme: bartik
 region: footer_fifth
-weight: -10
+weight: -11
 provider: null
 plugin: 'system_menu_block:social-networks'
 settings:

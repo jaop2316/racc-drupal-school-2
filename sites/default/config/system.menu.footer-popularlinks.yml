@@ -1,8 +1,0 @@
-uuid: a2fd0715-90ba-4f62-b3fe-35e9cab7b3d1
-langcode: en
-status: true
-dependencies: {  }
-id: footer-popularlinks
-label: Footer-PopularLinks
-description: 'Menu with popular links of the site'
-locked: false

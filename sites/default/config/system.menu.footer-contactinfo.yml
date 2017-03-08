@@ -1,8 +1,0 @@
-uuid: dbec9cfa-ed88-484c-9e87-00cd177a4084
-langcode: en
-status: true
-dependencies: {  }
-id: footer-contactinfo
-label: Footer-ContactInfo
-description: 'Menu with contact information'
-locked: false

@@ -14,7 +14,7 @@ dependencies:
     - text
     - user
 id: students
-label: Students
+label: homepage_students
 module: views
 description: ''
 tag: ''
@@ -309,9 +309,9 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
-  block_1:
+  homepage_students:
     display_plugin: block
-    id: block_1
+    id: homepage_students
     display_title: Block
     position: 1
     display_options:

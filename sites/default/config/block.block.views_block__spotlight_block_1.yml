@@ -2,17 +2,14 @@ uuid: f6c4d84a-dfe8-472d-968a-37a44024c523
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.spotlight
   module:
     - block_visibility_groups
-    - views
   theme:
     - bartik
 id: views_block__spotlight_block_1
 theme: bartik
 region: '-1'
-weight: -1
+weight: -7
 provider: null
 plugin: 'views_block:spotlight-block_1'
 settings:

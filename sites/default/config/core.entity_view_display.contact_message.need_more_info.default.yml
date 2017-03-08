@@ -1,0 +1,39 @@
+uuid: 3f7a8525-98c8-4034-a2ce-c534fed4fd6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.need_more_info
+    - field.field.contact_message.need_more_info.field_email
+    - field.field.contact_message.need_more_info.field_name
+    - field.field.contact_message.need_more_info.field_phone
+id: contact_message.need_more_info.default
+targetEntityType: contact_message
+bundle: need_more_info
+mode: default
+content:
+  field_email:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_phone:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  mail: true
+  message: true
+  name: true
+  subject: true

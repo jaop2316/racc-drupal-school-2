@@ -1,8 +1,0 @@
-uuid: 3f1f55ab-a0c7-4c18-bfc9-be18a9b7cff3
-langcode: en
-status: true
-dependencies: {  }
-id: footer-policies
-label: Footer-Policies
-description: 'Menu with policies'
-locked: false

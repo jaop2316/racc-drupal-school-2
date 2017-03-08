@@ -315,6 +315,7 @@ display:
         filters: false
         filter_groups: false
         pager: false
+        title: false
       filters:
         status:
           value: '1'
@@ -381,6 +382,7 @@ display:
         options:
           items_per_page: 2
           offset: 0
+      title: MORE
     cache_metadata:
       max-age: -1
       contexts:

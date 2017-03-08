@@ -1,8 +1,0 @@
-uuid: 24bec934-f013-4e95-be26-7d547c1f7c16
-langcode: en
-status: true
-dependencies: {  }
-id: footer-logincenter
-label: Footer-LoginCenter
-description: 'it''s a menu for racc access links'
-locked: false

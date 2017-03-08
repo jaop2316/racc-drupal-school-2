@@ -186,109 +186,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
+  carrer_opportunity_full_time_positions:
     display_plugin: block
-    id: block_1
-    display_title: 'Immediate Need'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Immediate Need'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        style: false
-        row: false
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            career_opportunities: career_opportunities
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-        field_inmediate_need_value:
-          id: field_inmediate_need_value
-          table: node__field_inmediate_need
-          field: field_inmediate_need_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: boolean
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      style:
-        type: html_list
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  block_2:
-    display_plugin: block
-    id: block_2
+    id: carrer_opportunity_full_time_positions
     display_title: 'Full Time Positions'
     position: 2
     display_options:
@@ -596,9 +496,109 @@ display:
       tags:
         - 'config:field.storage.node.field_aplication_status'
         - 'config:field.storage.node.field_apply_by_date_'
-  block_3:
+  carrer_opportunity_immediate_need:
     display_plugin: block
-    id: block_3
+    id: carrer_opportunity_immediate_need
+    display_title: 'Immediate Need'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: 'Immediate Need'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        style: false
+        row: false
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            career_opportunities: career_opportunities
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        field_inmediate_need_value:
+          id: field_inmediate_need_value
+          table: node__field_inmediate_need
+          field: field_inmediate_need_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  carrer_opportunity_part_time_instructor:
+    display_plugin: block
+    id: carrer_opportunity_part_time_instructor
     display_title: 'Part Time Instructor'
     position: 3
     display_options:
@@ -950,9 +950,9 @@ display:
       tags:
         - 'config:field.storage.node.field_aplication_status'
         - 'config:field.storage.node.field_apply_by_date_'
-  block_4:
+  carrer_opportunity_part_time_staff:
     display_plugin: block
-    id: block_4
+    id: carrer_opportunity_part_time_staff
     display_title: 'Part Time Staff'
     position: 4
     display_options:

@@ -9,7 +9,7 @@ dependencies:
     - node
     - user
 id: spotlight
-label: Spotlight
+label: homepage_spotlight
 module: views
 description: ''
 tag: ''
@@ -176,9 +176,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
+  homepage_spotlight:
     display_plugin: block
-    id: block_1
+    id: homepage_spotlight
     display_title: Block
     position: 1
     display_options:
