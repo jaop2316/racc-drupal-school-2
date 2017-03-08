@@ -1,8 +1,9 @@
 uuid: bfce3f18-ffdb-4bb6-a9c1-18a7a9ab3edc
 langcode: en
-status: true
+status: false
 dependencies:
   module:
+    - block_visibility_groups
     - system
   theme:
     - bartik
@@ -10,8 +11,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: bartik_breadcrumbs
 theme: bartik
-region: breadcrumb
-weight: 0
+region: '-1'
+weight: -11
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -19,4 +20,9 @@ settings:
   label: Breadcrumbs
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

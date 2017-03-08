@@ -1,6 +1,6 @@
 uuid: 319e982b-a72e-4a0b-bc0d-a369b17f2518
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer-popularlinks
@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: footerpopularlinks
 theme: bartik
-region: footer_first
-weight: 0
+region: '-1'
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer-popularlinks'
 settings:

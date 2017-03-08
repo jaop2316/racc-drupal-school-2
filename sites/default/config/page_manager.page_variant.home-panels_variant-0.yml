@@ -1,0 +1,101 @@
+uuid: 883440d3-ed58-4306-aa70-afa4f1003ad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.home
+    - views.view.brands
+    - views.view.events
+    - views.view.news
+    - views.view.slider
+    - views.view.spotlight
+    - views.view.students
+  module:
+    - panels
+    - views
+id: home-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    15daa5e5-c48c-4d5b-b9a3-5e3c1fff3234:
+      id: 'views_block:slider-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 1
+      uuid: 15daa5e5-c48c-4d5b-b9a3-5e3c1fff3234
+      context_mapping: {  }
+    423d81f1-a5a1-440e-96e8-7ae071475d35:
+      id: 'views_block:students-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: left_above
+      weight: 1
+      uuid: 423d81f1-a5a1-440e-96e8-7ae071475d35
+      context_mapping: {  }
+    65ff7632-75b7-426d-865b-2c439fe801ae:
+      id: 'views_block:news-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right_above
+      weight: -3
+      uuid: 65ff7632-75b7-426d-865b-2c439fe801ae
+      context_mapping: {  }
+    4130b2eb-ca2d-48fa-a40f-cd3101948b7c:
+      id: 'views_block:events-block_2'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 1
+      uuid: 4130b2eb-ca2d-48fa-a40f-cd3101948b7c
+      context_mapping: {  }
+    bdf414b1-8bce-4d13-97b9-b02e6020faad:
+      id: 'views_block:brands-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: 1
+      uuid: bdf414b1-8bce-4d13-97b9-b02e6020faad
+      context_mapping: {  }
+    c26e9b0b-dc47-418f-988c-3ba78ad0fe00:
+      id: 'views_block:spotlight-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 2
+      uuid: c26e9b0b-dc47-418f-988c-3ba78ad0fe00
+      context_mapping: {  }
+  id: panels_variant
+  uuid: d3de549e-fb43-4f62-8fc8-3c6bda0f8763
+  label: null
+  weight: 0
+  layout: twocol_bricks
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: home-panels_variant-0
+  builder: ipe
+page: home
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

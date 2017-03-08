@@ -453,7 +453,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: 'Last Events'
+      title: 'UPCOMING EVENTS'
       defaults:
         title: false
         fields: false
@@ -725,7 +725,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''

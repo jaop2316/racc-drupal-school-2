@@ -4,6 +4,7 @@ module:
   basic_auth: 0
   block: 0
   block_content: 0
+  block_visibility_groups: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -38,6 +39,7 @@ module:
   layout_plugin: 0
   link: 0
   linkit: 0
+  menu_block: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -45,6 +47,7 @@ module:
   page_manager: 0
   page_manager_ui: 0
   panelizer: 0
+  panelizer_quickedit: 0
   panels: 0
   panels_everywhere: 0
   panels_ipe: 0
@@ -65,9 +68,11 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
+  ds: 1
   menu_link_content: 1
   pathauto: 1
   views: 10

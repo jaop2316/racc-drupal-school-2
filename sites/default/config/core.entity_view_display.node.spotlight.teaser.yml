@@ -1,19 +1,21 @@
-uuid: 8b2e8a7e-12a0-438e-89f3-262693a6cab3
+uuid: 4a8c8be2-c2fc-41d9-9b16-6923131fdc8d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.student.body
-    - field.field.node.student.field_image
-    - field.field.node.student.panelizer
-    - node.type.student
+    - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_image
+    - field.field.node.spotlight.field_text_secondary
+    - field.field.node.spotlight.field_video_link
+    - node.type.spotlight
   module:
     - ds
     - panelizer
     - responsive_image
     - text
     - user
+    - video_embed_field
 third_party_settings:
   ds:
     layout:
@@ -35,35 +37,53 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      right:
-        - body
-      left:
+      header:
         - field_image
+      left:
+        - body
+      right:
+        - field_video_link
+        - field_text_secondary
   panelizer:
     enable: false
     custom: false
     allow: false
     default: default
-id: node.student.teaser
+id: node.spotlight.teaser
 targetEntityType: node
-bundle: student
+bundle: spotlight
 mode: teaser
 content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 0
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
   field_image:
     type: responsive_image
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       responsive_image_style: ''
       image_link: ''
     third_party_settings: {  }
+  field_text_secondary:
+    type: basic_string
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_video_link:
+    type: video_embed_field_video
+    weight: 2
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
 hidden:
   links: true
-  panelizer: true

@@ -1,12 +1,12 @@
-uuid: b28af40b-f9ae-49ea-8197-9e77fc601434
+uuid: 78e42a6f-1525-4b18-97eb-7905172ae56b
 langcode: en
 status: true
 dependencies: {  }
-id: test
-label: Test
+id: panels
+label: 'Panels Everywhere'
 description: ''
 use_admin_theme: false
-path: /test
+path: /panels
 access_logic: and
 access_conditions: {  }
 parameters: {  }

@@ -1,6 +1,6 @@
 uuid: 785840e7-91cd-4c8e-80b3-a87ee9dc0382
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer-policies
@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: footerpolicies
 theme: bartik
-region: footer_third
-weight: 0
+region: '-1'
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer-policies'
 settings:

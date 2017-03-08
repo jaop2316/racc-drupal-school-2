@@ -1,6 +1,6 @@
 uuid: 736f2aa8-9e5c-4911-a1ba-c9b56c7f0b07
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer-logincenter
@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: footerlogincenter
 theme: bartik
-region: footer_fourth
-weight: 0
+region: '-1'
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer-logincenter'
 settings:
