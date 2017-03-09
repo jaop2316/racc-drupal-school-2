@@ -7,7 +7,22 @@ dependencies:
     - field.field.block_content.contact_form.body
     - field.field.block_content.contact_form.field_contact_form
   module:
+    - ds
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_contact_form
+      right:
+        - body
 id: block_content.contact_form.default
 targetEntityType: block_content
 bundle: contact_form
