@@ -5,6 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.current_postings.body
+    - field.field.node.current_postings.field_bid_bond
+    - field.field.node.current_postings.field_departament
+    - field.field.node.current_postings.field_due_date
+    - field.field.node.current_postings.field_performance_bond
+    - field.field.node.current_postings.field_post_date
+    - field.field.node.current_postings.field_proposal_number
     - node.type.current_postings
   module:
     - text
@@ -23,4 +29,11 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_bid_bond: true
+  field_departament: true
+  field_due_date: true
+  field_performance_bond: true
+  field_post_date: true
+  field_proposal_number: true
+  langcode: true

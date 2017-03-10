@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.student.body
     - field.field.node.student.field_image
+    - field.field.node.student.panelizer
     - image.style.thumbnail
     - node.type.student
   module:
@@ -36,6 +37,11 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -68,4 +74,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  panelizer: true

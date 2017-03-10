@@ -76,4 +76,5 @@ content:
     type: string
   links:
     weight: 100
-hidden: {  }
+hidden:
+  langcode: true

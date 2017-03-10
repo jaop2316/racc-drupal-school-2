@@ -71,4 +71,5 @@ content:
     third_party_settings: {  }
     type: string
 hidden:
+  langcode: true
   links: true

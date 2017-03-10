@@ -158,4 +158,5 @@ content:
     third_party_settings: {  }
     type: video_embed_field_video
 hidden:
+  langcode: true
   links: true

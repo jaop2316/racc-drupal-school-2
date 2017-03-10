@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.get_connected.field_image
+    - field.field.node.get_connected.field_message
+    - field.field.node.get_connected.field_message_url
+    - field.field.node.get_connected.field_type
     - field.field.node.get_connected.field_url
     - node.type.get_connected
   module:
@@ -18,4 +21,8 @@ content:
     weight: 100
 hidden:
   field_image: true
+  field_message: true
+  field_message_url: true
+  field_type: true
   field_url: true
+  langcode: true
