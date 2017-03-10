@@ -8,9 +8,9 @@ dependencies:
     - field.field.node.spotlight.field_image
     - field.field.node.spotlight.field_text_secondary
     - field.field.node.spotlight.field_video_link
-    - field.field.node.spotlight.panelizer
     - node.type.spotlight
   module:
+    - ds
     - image
     - panelizer
     - text
@@ -18,8 +18,8 @@ dependencies:
     - video_embed_field
 third_party_settings:
   panelizer:
-    enable: true
-    custom: true
+    enable: false
+    custom: false
     allow: false
     default: default
     displays:
@@ -106,6 +106,22 @@ third_party_settings:
         storage_id: 'node:spotlight:full:default'
         builder: ipe
         pattern: panelizer
+  ds:
+    layout:
+      id: twocol_stacked
+      path: modules/panels/layouts/twocol_stacked
+      library: layout_plugin/twocol_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_image
+      left:
+        - body
+      right:
+        - field_video_link
+        - field_text_secondary
 id: node.spotlight.full
 targetEntityType: node
 bundle: spotlight
@@ -141,14 +157,5 @@ content:
       autoplay: true
     third_party_settings: {  }
     type: video_embed_field_video
-  links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-  panelizer:
-    type: panelizer
-    weight: 0
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true

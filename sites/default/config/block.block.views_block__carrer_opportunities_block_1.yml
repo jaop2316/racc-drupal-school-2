@@ -7,7 +7,7 @@ dependencies:
 id: views_block__carrer_opportunities_block_1
 theme: bartik
 region: '-1'
-weight: -9
+weight: -12
 provider: null
 plugin: 'views_block:carrer_opportunities-block_1'
 settings:

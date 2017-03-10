@@ -11,6 +11,7 @@ dependencies:
   module:
     - ds
     - image
+    - text
 third_party_settings:
   ds:
     layout:
@@ -33,17 +34,17 @@ bundle: tabs_content
 mode: default
 content:
   field_aditional_info:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-  field_body:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_image:
     weight: 0
     label: hidden

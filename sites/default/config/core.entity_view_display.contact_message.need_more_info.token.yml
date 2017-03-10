@@ -1,9 +1,10 @@
-uuid: 3f7a8525-98c8-4034-a2ce-c534fed4fd6e
+uuid: e940d25a-72ce-4c4d-aea3-8aef9251c023
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - contact.form.need_more_info
+    - core.entity_view_mode.contact_message.token
     - field.field.contact_message.need_more_info.field_email
     - field.field.contact_message.need_more_info.field_name
     - field.field.contact_message.need_more_info.field_phone
@@ -25,10 +26,10 @@ third_party_settings:
         - field_phone
       right:
         - field_email
-id: contact_message.need_more_info.default
+id: contact_message.need_more_info.token
 targetEntityType: contact_message
 bundle: need_more_info
-mode: default
+mode: token
 content:
   field_email:
     weight: 2
@@ -50,8 +51,30 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-hidden:
-  mail: true
-  message: true
-  name: true
-  subject: true
+  mail:
+    type: basic_string
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: basic_string
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  subject:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

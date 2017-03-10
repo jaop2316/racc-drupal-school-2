@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.spotlight.field_image
     - field.field.node.spotlight.field_text_secondary
     - field.field.node.spotlight.field_video_link
-    - field.field.node.spotlight.panelizer
     - node.type.spotlight
   module:
     - image
@@ -17,8 +16,8 @@ dependencies:
     - video_embed_field
 third_party_settings:
   panelizer:
-    enable: true
-    custom: true
+    enable: false
+    custom: false
     allow: false
     default: default
     displays:
@@ -177,12 +176,6 @@ content:
     type: video_embed_field_video
   links:
     weight: 0
-    settings: {  }
-    third_party_settings: {  }
-  panelizer:
-    type: panelizer
-    weight: 0
-    label: above
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

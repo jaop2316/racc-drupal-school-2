@@ -11,7 +11,7 @@ dependencies:
     - responsive_image
     - user
 id: brands
-label: homepage_brands
+label: 'Homepage Brands'
 module: views
 description: ''
 tag: ''

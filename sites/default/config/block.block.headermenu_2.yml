@@ -1,29 +1,30 @@
-uuid: 7f158a3d-21aa-4b55-8578-24a611402742
+uuid: 5a8f8c9d-0583-4bb9-bdbf-4d64bdeeca04
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.header-menu
   module:
     - block_visibility_groups
-    - system
+    - menu_block
   theme:
     - bartik
-_core:
-  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: bartik_main_menu
+id: headermenu_2
 theme: bartik
 region: header
-weight: -12
+weight: -13
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'menu_block:header-menu'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
-  provider: system
+  id: 'menu_block:header-menu'
+  label: 'Header menu'
+  provider: menu_block
   label_display: '0'
   level: 1
   depth: 0
+  expand: 0
+  parent: 'header-menu:'
+  suggestion: header_menu
 visibility:
   condition_group:
     id: condition_group

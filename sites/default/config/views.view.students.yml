@@ -14,7 +14,7 @@ dependencies:
     - text
     - user
 id: students
-label: homepage_students
+label: 'Homepage Students'
 module: views
 description: ''
 tag: ''

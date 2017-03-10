@@ -12,7 +12,7 @@ dependencies:
 id: copyright
 theme: bartik
 region: footer_fifth
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:786663da-1b7b-4650-8c77-589082845ae7'
 settings:

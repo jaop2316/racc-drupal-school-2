@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.tabs_content
   module:
     - image
+    - text
 id: paragraph.tabs_content.default
 targetEntityType: paragraph
 bundle: tabs_content
@@ -22,14 +23,14 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
   field_body:
     weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
   field_image:
     weight: 1
     settings:

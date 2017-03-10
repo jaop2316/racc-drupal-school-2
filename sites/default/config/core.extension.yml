@@ -33,12 +33,14 @@ module:
   file: 0
   filter: 0
   focal_point: 0
+  fontawesome: 0
   hal: 0
   help: 0
   history: 0
   image: 0
   imce: 0
   layout_plugin: 0
+  libraries: 0
   link: 0
   linkit: 0
   menu_block: 0
@@ -71,6 +73,7 @@ module:
   update: 0
   user: 0
   video_embed_field: 0
+  video_embed_wysiwyg: 0
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
