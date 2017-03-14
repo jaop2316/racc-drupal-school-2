@@ -1,14 +1,14 @@
-uuid: 228bf2e7-4406-4564-bae7-2e6181bce2bc
+uuid: b31886f5-2895-4bd6-a653-28f259dfbaef
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.copyright
+    - block_content.type.layout_content
     - field.storage.block_content.field_title
-id: block_content.copyright.field_title
+id: block_content.layout_content.field_title
 field_name: field_title
 entity_type: block_content
-bundle: copyright
+bundle: layout_content
 label: Title
 description: ''
 required: false

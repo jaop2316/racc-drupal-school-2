@@ -1,15 +1,15 @@
-uuid: ab0c35fa-1534-4bb8-b893-94365fbd9280
+uuid: 65f6da28-8524-48c0-b865-5caa60aa0503
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-id: block_content.field_title
-field_name: field_title
+id: block_content.field_sidebar_title
+field_name: field_sidebar_title
 entity_type: block_content
 type: string
 settings:
-  max_length: 255
+  max_length: 80
   is_ascii: false
   case_sensitive: false
 module: core

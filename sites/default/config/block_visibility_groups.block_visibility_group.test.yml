@@ -1,0 +1,17 @@
+uuid: 1e4e69e1-c22c-47c9-b966-545b6db01a9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: test
+label: Test
+logic: and
+conditions:
+  ba8a02fe-1ee4-416a-b899-3371d49df92b:
+    id: request_path
+    pages: /test
+    negate: false
+    context_mapping: {  }
+    uuid: ba8a02fe-1ee4-416a-b899-3371d49df92b
+allow_other_conditions: false

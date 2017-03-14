@@ -1,0 +1,44 @@
+uuid: 75938d4a-3ca7-4d85-b75f-c3115798ba3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page_with_banner.body
+    - field.field.node.basic_page_with_banner.field_image
+    - node.type.basic_page_with_banner
+  module:
+    - image
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.basic_page_with_banner.default
+targetEntityType: node
+bundle: basic_page_with_banner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

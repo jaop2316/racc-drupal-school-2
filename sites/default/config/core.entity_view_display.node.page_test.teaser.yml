@@ -1,18 +1,17 @@
-uuid: 455465fd-a96c-49ae-bd91-d17622f05125
+uuid: f3209116-2fce-4d0c-9c20-3aa562db1534
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page_racc.body
-    - field.field.node.page_racc.field_image
-    - node.type.page_racc
+    - field.field.node.page_test.body
+    - node.type.page_test
   module:
     - text
     - user
-id: node.page_racc.teaser
+id: node.page_test.teaser
 targetEntityType: node
-bundle: page_racc
+bundle: page_test
 mode: teaser
 content:
   body:
@@ -25,5 +24,4 @@ content:
   links:
     weight: 100
 hidden:
-  field_image: true
   langcode: true

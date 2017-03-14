@@ -9,11 +9,11 @@ dependencies:
     - views.view.homepage_get_connected_
     - views.view.news
     - views.view.slider
-    - views.view.spotlight
     - views.view.students
   content:
     - 'block_content:contact_form:c163dac8-a8e2-4333-8ef7-2a7b139306f8'
     - 'block_content:information:02012e8c-6a85-48f7-b222-5a370dce3b67'
+    - 'block_content:layout_content:268a2fa3-8669-4c73-9358-087172a5a42e'
   module:
     - block_content
     - panels
@@ -67,17 +67,6 @@ variant_settings:
       weight: 0
       uuid: 172a2b9c-41cb-423b-870a-19208826a590
       context_mapping: {  }
-    23f8de61-ec1e-42db-8b35-41b506662c62:
-      id: 'views_block:spotlight-homepage_spotlight'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: middle
-      weight: 3
-      uuid: 23f8de61-ec1e-42db-8b35-41b506662c62
-      context_mapping: {  }
     2d9f237c-0fe2-4edf-bc70-1d248b5a139f:
       id: 'views_block:students-homepage_students'
       label: ''
@@ -124,13 +113,25 @@ variant_settings:
       weight: 2
       uuid: 8d20b71e-a763-4fb8-a3e1-6231a14c7cbd
       context_mapping: {  }
+    7ac56f45-b24c-4486-b88b-8cbf1e5c8849:
+      id: 'block_content:268a2fa3-8669-4c73-9358-087172a5a42e'
+      label: 'Layout Content'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: 3
+      uuid: 7ac56f45-b24c-4486-b88b-8cbf1e5c8849
+      context_mapping: {  }
   id: panels_variant
   uuid: d3de549e-fb43-4f62-8fc8-3c6bda0f8763
   label: null
   weight: 0
   layout: onecol
   layout_settings: {  }
-  page_title: null
+  page_title: ''
   storage_type: page_manager
   storage_id: home-panels_variant-0
   builder: standard

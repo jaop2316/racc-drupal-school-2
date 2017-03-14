@@ -1,18 +1,16 @@
-uuid: ab0c35fa-1534-4bb8-b893-94365fbd9280
+uuid: 50a2a27d-7384-4016-a900-6fdc8debdbde
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-id: block_content.field_title
-field_name: field_title
+    - video_embed_field
+id: block_content.field_video_link
+field_name: field_video_link
 entity_type: block_content
-type: string
-settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+type: video_embed_field
+settings: {  }
+module: video_embed_field
 locked: false
 cardinality: 1
 translatable: true

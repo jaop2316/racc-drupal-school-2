@@ -1,4 +1,4 @@
-uuid: 43fa4dd5-e2b6-43ef-9621-1e7959443411
+uuid: 905bd909-469e-4da8-84a1-f627f4ed2f6b
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
       - main
     parent: 'main:'
 name: Page
-type: page_racc
-description: 'Use for create a new page with title , body and image'
+type: page_test
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1

@@ -1,18 +1,25 @@
-uuid: 6c732904-f6cf-47f9-8e83-b76afa01fd32
+uuid: 80d48aed-a860-4668-b6a7-5b5a791fbe64
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.page_racc
+    - block_content.type.layout_content
+    - field.storage.block_content.field_image
   module:
+    - content_translation
     - image
-id: node.page_racc.field_image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: block_content.layout_content.field_image
 field_name: field_image
-entity_type: node
-bundle: page_racc
+entity_type: block_content
+bundle: layout_content
 label: Image
-description: 'Upload a image for this field.'
+description: ''
 required: false
 translatable: true
 default_value: {  }
