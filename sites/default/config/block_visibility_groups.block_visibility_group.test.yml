@@ -8,10 +8,10 @@ id: test
 label: Test
 logic: and
 conditions:
-  ba8a02fe-1ee4-416a-b899-3371d49df92b:
+  3655dec0-6c51-4d60-9ef0-e673cde3af2c:
     id: request_path
-    pages: /about-racc
+    pages: "/about-racc\r\n/about-racc/*"
     negate: false
     context_mapping: {  }
-    uuid: ba8a02fe-1ee4-416a-b899-3371d49df92b
+    uuid: 3655dec0-6c51-4d60-9ef0-e673cde3af2c
 allow_other_conditions: false
