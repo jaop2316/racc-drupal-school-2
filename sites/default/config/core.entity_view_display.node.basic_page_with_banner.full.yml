@@ -1,8 +1,9 @@
-uuid: 75938d4a-3ca7-4d85-b75f-c3115798ba3a
+uuid: f1a8721b-0906-4019-8394-232567de9be4
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.basic_page_with_banner.body
     - field.field.node.basic_page_with_banner.field_image
     - node.type.basic_page_with_banner
@@ -30,10 +31,10 @@ third_party_settings:
       middle:
         - field_image
         - body
-id: node.basic_page_with_banner.default
+id: node.basic_page_with_banner.full
 targetEntityType: node
 bundle: basic_page_with_banner
-mode: default
+mode: full
 content:
   body:
     label: hidden

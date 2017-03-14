@@ -6,8 +6,35 @@ dependencies:
     - field.field.node.page.body
     - node.type.page
   module:
+    - ds
+    - panelizer
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: onecol
+      path: modules/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          middle: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      middle:
+        - body
+        - links
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 _core:
   default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
 id: node.page.default
@@ -23,5 +50,7 @@ content:
     third_party_settings: {  }
   links:
     weight: 101
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

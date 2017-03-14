@@ -10,7 +10,7 @@ logic: and
 conditions:
   ba8a02fe-1ee4-416a-b899-3371d49df92b:
     id: request_path
-    pages: /test
+    pages: /about-racc
     negate: false
     context_mapping: {  }
     uuid: ba8a02fe-1ee4-416a-b899-3371d49df92b
