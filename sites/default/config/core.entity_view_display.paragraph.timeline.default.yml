@@ -13,14 +13,14 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: onecol
-      path: modules/panels/layouts/onecol
-      library: layout_plugin/onecol
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      middle:
+      left:
         - field_image
         - field_time_frame
         - field_title
@@ -45,10 +45,10 @@ content:
     third_party_settings: {  }
     type: string
   field_title:
+    type: string
     weight: 2
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
 hidden: {  }

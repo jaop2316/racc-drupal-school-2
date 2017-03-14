@@ -8,8 +8,23 @@ dependencies:
     - field.field.block_content.timeline.field_timeline
     - field.field.block_content.timeline.field_title
   module:
+    - ds
     - entity_reference_revisions
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: onecol
+      path: modules/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      middle:
+        - field_title
+        - body
+        - field_timeline
 id: block_content.timeline.default
 targetEntityType: block_content
 bundle: timeline
