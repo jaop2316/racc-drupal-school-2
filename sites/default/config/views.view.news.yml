@@ -12,6 +12,7 @@ dependencies:
     - responsive_image.styles.news_responsive
     - taxonomy.vocabulary.news_category
   module:
+    - better_exposed_filters
     - ds
     - node
     - responsive_image
@@ -49,7 +50,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
           reset_button: false
@@ -58,6 +59,8 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: null
       pager:
         type: none
         options:
@@ -423,6 +426,7 @@ display:
         filter_groups: false
         sorts: false
         use_ajax: false
+        exposed_form: false
       style:
         type: default
         options:
@@ -818,6 +822,30 @@ display:
           entity_field: created
           plugin_id: date
       use_ajax: true
+      exposed_form:
+        type: bef
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          bef:
+            general:
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              autosubmit: true
+              autosubmit_hide: true
+            field_category_target_id:
+              bef_format: bef
+              more_options:
+                bef_select_all_none: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: "- Any -|NEWS \nAdmissions|ADMISSIONS\nAnnouncements|ANNOUNCEMENTS\nGeneral|GENERAL\nIn the news|IN THE NEWS\nStudent Spotlight|STUDENT SPOTLIGHT"
     cache_metadata:
       max-age: -1
       contexts:

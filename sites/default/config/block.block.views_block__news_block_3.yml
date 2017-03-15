@@ -1,0 +1,31 @@
+uuid: a6eaf2d0-b183-4efa-b075-c7ae4572bfd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.featured_and_news_
+    - views.view.news
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - bartik
+id: views_block__news_block_3
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:news-block_3'
+settings:
+  id: 'views_block:news-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: featured_and_news_
+    context_mapping: {  }
