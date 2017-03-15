@@ -9,10 +9,50 @@ dependencies:
     - field.field.node.news.field_feature
     - field.field.node.news.field_image
     - field.field.node.news.field_short_title
+    - image.style.news_large_254x198
     - node.type.news
   module:
+    - ds
+    - image
+    - panelizer
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - node_post_date
+        - node_title
+        - body
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_long
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.news.teaser
 targetEntityType: node
 bundle: news
@@ -20,16 +60,22 @@ mode: teaser
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
+    type: text_trimmed
+    weight: 3
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
-  links:
-    weight: 100
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: news_large_254x198
+      image_link: ''
+    third_party_settings: {  }
 hidden:
   field_category: true
   field_feature: true
-  field_image: true
   field_short_title: true
   langcode: true
+  links: true
