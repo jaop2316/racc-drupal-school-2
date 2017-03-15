@@ -33,7 +33,13 @@ third_party_settings:
         - node_post_date
         - node_title
         - body
+        - node_link
     fields:
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
       node_post_date:
         plugin_id: node_post_date
         weight: 1
