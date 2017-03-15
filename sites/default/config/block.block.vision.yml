@@ -12,7 +12,7 @@ dependencies:
 id: vision
 theme: bartik
 region: '-1'
-weight: -2
+weight: -1
 provider: null
 plugin: 'block_content:c0349bc6-8af4-423f-b946-345c05000fea'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: timelineinaboutpage
 theme: bartik
 region: '-1'
-weight: -12
+weight: -11
 provider: null
 plugin: 'block_content:52588531-8e0b-4c3c-af5d-bf2504480f5b'
 settings:

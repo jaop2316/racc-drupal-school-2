@@ -51,9 +51,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: true
           wrapper: h1
           class: ''
-          link: false
   panelizer:
     enable: false
     custom: false
