@@ -12,7 +12,7 @@ dependencies:
 id: informationaboutracc_2
 theme: bartik
 region: '-1'
-weight: -6
+weight: -4
 provider: null
 plugin: 'block_content:02012e8c-6a85-48f7-b222-5a370dce3b67'
 settings:

@@ -6,7 +6,7 @@ id: news
 label: News
 description: ''
 use_admin_theme: false
-path: /news
+path: /news2
 access_logic: and
 access_conditions: {  }
 parameters: {  }

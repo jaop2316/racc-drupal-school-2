@@ -1,19 +1,20 @@
 uuid: a6eaf2d0-b183-4efa-b075-c7ae4572bfd7
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.featured_and_news_
     - views.view.news
   module:
     - block_visibility_groups
+    - system
     - views
   theme:
     - bartik
 id: views_block__news_block_3
 theme: bartik
-region: sidebar_second
-weight: 0
+region: '-1'
+weight: 2
 provider: null
 plugin: 'views_block:news-block_3'
 settings:
@@ -28,4 +29,9 @@ visibility:
     id: condition_group
     negate: false
     block_visibility_group: featured_and_news_
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '/news?field_category_target_id=All'
+    negate: false
     context_mapping: {  }

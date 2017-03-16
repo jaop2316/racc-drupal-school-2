@@ -968,6 +968,7 @@ display:
         filters: false
         filter_groups: false
         sorts: false
+        pager: false
       fields:
         field_date_start:
           id: field_date_start
@@ -1239,6 +1240,11 @@ display:
             label: ''
           granularity: month
           plugin_id: datetime
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

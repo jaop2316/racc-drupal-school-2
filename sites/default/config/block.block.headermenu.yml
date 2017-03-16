@@ -11,7 +11,7 @@ dependencies:
 id: headermenu
 theme: bartik
 region: '-1'
-weight: -8
+weight: -6
 provider: null
 plugin: 'system_menu_block:header-menu'
 settings:
