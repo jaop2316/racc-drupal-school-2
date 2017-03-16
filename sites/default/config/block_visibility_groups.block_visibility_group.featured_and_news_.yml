@@ -10,7 +10,7 @@ logic: and
 conditions:
   c14ec211-e037-4b54-b851-bf8d4d2fb0e2:
     id: request_path
-    pages: "/news\r\n/news/*\r\n/event/*"
+    pages: "/news\r\n/news/*\r\n/event/*\r\n/events"
     negate: false
     context_mapping: {  }
     uuid: c14ec211-e037-4b54-b851-bf8d4d2fb0e2

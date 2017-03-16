@@ -57,7 +57,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 3
+          items_per_page: 0
           offset: 0
       style:
         type: grid
@@ -847,8 +847,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_trimmed
+          settings:
+            trim_length: 150
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -872,7 +873,7 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: month
+          granularity: day
           plugin_id: datetime
       filters:
         status:
