@@ -12,7 +12,7 @@ dependencies:
 id: annualfund
 theme: bartik
 region: '-1'
-weight: -20
+weight: -21
 provider: null
 plugin: 'block_content:ef45c9bc-b06a-4c01-8389-179415e300f1'
 settings:
