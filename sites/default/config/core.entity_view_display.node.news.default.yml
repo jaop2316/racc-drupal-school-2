@@ -19,8 +19,8 @@ dependencies:
     - user
 third_party_settings:
   panelizer:
-    enable: false
-    custom: false
+    enable: true
+    custom: true
     allow: false
     default: default
     displays:
@@ -77,22 +77,23 @@ third_party_settings:
             uuid: db53c4e1-3d50-4e04-a299-a044d0945550
             context_mapping:
               entity: '@panelizer.entity_context:entity'
-          e66e0d86-a870-4452-98dc-49d6dff05677:
-            id: 'entity_field:node:field_post_date'
-            label: 'Post Date'
+          dc4006a5-9efc-4c8f-9d6f-0b589b9f5a64:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
             provider: ctools_block
             label_display: '0'
             formatter:
-              label: above
-              type: datetime_default
+              label: hidden
+              type: timestamp
               settings:
-                timezone_override: ''
-                format_type: long
+                date_format: long
+                custom_date_format: ''
+                timezone: ''
               third_party_settings: {  }
               weight: 0
             region: middle
             weight: 1
-            uuid: e66e0d86-a870-4452-98dc-49d6dff05677
+            uuid: dc4006a5-9efc-4c8f-9d6f-0b589b9f5a64
             context_mapping:
               entity: '@panelizer.entity_context:entity'
         id: panels_variant
@@ -108,19 +109,6 @@ third_party_settings:
         pattern: panelizer
         static_context: {  }
   ds:
-    layout:
-      id: onecol
-      path: modules/panels/layouts/onecol
-      library: layout_plugin/onecol
-      disable_css: false
-      entity_classes: all_classes
-      settings: {  }
-    regions:
-      middle:
-        - field_image
-        - node_title
-        - node_post_date
-        - body
     fields:
       node_post_date:
         plugin_id: node_post_date
