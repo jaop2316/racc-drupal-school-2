@@ -13,7 +13,7 @@ dependencies:
 id: mainnavigation_4
 theme: bartik
 region: sidebar_first
-weight: -18
+weight: -19
 provider: null
 plugin: 'menu_block:main'
 settings:

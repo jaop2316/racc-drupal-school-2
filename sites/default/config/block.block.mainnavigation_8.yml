@@ -1,19 +1,19 @@
-uuid: c7d04243-3f3d-468b-b454-88ddd00d866d
+uuid: 8dafe199-75cf-4513-8f4d-3d0030ebd9d0
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.test
+    - block_visibility_groups.block_visibility_group.main_menu_side_bar
     - system.menu.main
   module:
     - block_visibility_groups
     - menu_block
   theme:
     - bartik
-id: mainnavigation
+id: mainnavigation_8
 theme: bartik
 region: sidebar_first
-weight: -26
+weight: -17
 provider: null
 plugin: 'menu_block:main'
 settings:
@@ -22,13 +22,13 @@ settings:
   provider: menu_block
   label_display: visible
   level: 1
-  depth: 3
-  expand: 1
-  parent: 'main:menu_link_content:29a996f1-afdf-4520-8ccc-611024c406dd'
+  depth: 1
+  expand: 0
+  parent: 'main:'
   suggestion: main
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: test
+    block_visibility_group: main_menu_side_bar
     context_mapping: {  }
