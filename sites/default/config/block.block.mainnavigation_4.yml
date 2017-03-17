@@ -1,34 +1,34 @@
-uuid: a011cfe1-54d1-466e-a20f-f75a82469fd1
+uuid: 72a24edc-a8f0-4c47-95b4-9335be1b20b0
 langcode: en
 status: true
 dependencies:
   config:
-    - block_visibility_groups.block_visibility_group.academics_menu
+    - block_visibility_groups.block_visibility_group.admissions_menus
     - system.menu.main
   module:
     - block_visibility_groups
     - menu_block
   theme:
     - bartik
-id: mainnavigation_2
+id: mainnavigation_4
 theme: bartik
 region: sidebar_first
-weight: -23
+weight: -18
 provider: null
 plugin: 'menu_block:main'
 settings:
   id: 'menu_block:main'
-  label: ACADEMICS
+  label: ADMISSIONS
   provider: menu_block
   label_display: visible
   level: 1
-  depth: 4
+  depth: 0
   expand: 1
-  parent: 'main:menu_link_content:eb368ca3-5970-46ca-a5a5-61107150e47f'
+  parent: 'main:menu_link_content:56b697c7-a927-4f34-a2d8-6fd8a4791587'
   suggestion: main
 visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: academics_menu
+    block_visibility_group: admissions_menus
     context_mapping: {  }

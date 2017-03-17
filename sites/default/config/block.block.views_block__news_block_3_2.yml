@@ -13,7 +13,7 @@ dependencies:
 id: views_block__news_block_3_2
 theme: bartik
 region: sidebar_second
-weight: 0
+weight: -24
 provider: null
 plugin: 'views_block:news-block_3'
 settings:
