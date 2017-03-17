@@ -202,6 +202,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        header: false
       style:
         type: table
         options:
@@ -486,6 +487,20 @@ display:
         operator: AND
         groups:
           1: AND
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h1>Career Opportunities Listing</h1>\n<p>Note: All listed salaries are nonnegotiable.</p>\n<p>Full-time Positions:</p>"
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:
@@ -511,6 +526,7 @@ display:
         filter_groups: false
         style: false
         row: false
+        header: false
       filters:
         status:
           value: '1'
@@ -588,6 +604,20 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<p>Immediate Need</p>\n<p>The job postings in the following list need to be filled immediately. If interested in a position, please apply as soon as possible.</p>"
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -612,6 +642,7 @@ display:
         filter_groups: false
         style: false
         row: false
+        header: false
       fields:
         title:
           id: title
@@ -939,6 +970,20 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p>Part-time Instructor Positions:</p>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:
@@ -966,6 +1011,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        header: false
       style:
         type: table
         options:
@@ -1293,6 +1339,20 @@ display:
         operator: AND
         groups:
           1: AND
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p>Part-time Staff Positions:</p>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:

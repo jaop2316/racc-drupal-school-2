@@ -31,7 +31,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: -10
+            weight: -2
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: 8f4d800e-21e2-478f-9466-ab5d7a98173e
@@ -43,8 +43,52 @@ third_party_settings:
             views_label: ''
             items_per_page: none
             region: middle
-            weight: 0
+            weight: -1
             uuid: 7e46584c-a2a5-4b0e-9983-b0b3f3e5a27e
+            context_mapping: {  }
+          f17e1909-3ba0-47fa-9347-2b1b7dfe7f08:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_immediate_need'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 0
+            uuid: f17e1909-3ba0-47fa-9347-2b1b7dfe7f08
+            context_mapping: {  }
+          20f1ae99-d384-4774-b368-b569e29774f9:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_full_time_positions'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 1
+            uuid: 20f1ae99-d384-4774-b368-b569e29774f9
+            context_mapping: {  }
+          358b2ea3-8d0f-4fd4-971c-223ef85c372f:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_part_time_instructor'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 2
+            uuid: 358b2ea3-8d0f-4fd4-971c-223ef85c372f
+            context_mapping: {  }
+          d46cb8a6-ddef-4325-97aa-bc43d091761c:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_part_time_staff'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 0
+            uuid: d46cb8a6-ddef-4325-97aa-bc43d091761c
             context_mapping: {  }
         id: panels_variant
         label: Default
