@@ -14,7 +14,7 @@ _core:
 id: bartik_footer
 theme: bartik
 region: '-1'
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

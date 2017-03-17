@@ -14,7 +14,7 @@ _core:
 id: bartik_main_menu
 theme: bartik
 region: '-1'
-weight: 3
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:
