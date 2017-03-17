@@ -31,7 +31,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: -2
+            weight: -3
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: 8f4d800e-21e2-478f-9466-ab5d7a98173e
@@ -43,7 +43,7 @@ third_party_settings:
             views_label: ''
             items_per_page: none
             region: middle
-            weight: -1
+            weight: -2
             uuid: 7e46584c-a2a5-4b0e-9983-b0b3f3e5a27e
             context_mapping: {  }
           f17e1909-3ba0-47fa-9347-2b1b7dfe7f08:
@@ -54,7 +54,7 @@ third_party_settings:
             views_label: ''
             items_per_page: none
             region: middle
-            weight: 0
+            weight: -1
             uuid: f17e1909-3ba0-47fa-9347-2b1b7dfe7f08
             context_mapping: {  }
           20f1ae99-d384-4774-b368-b569e29774f9:
@@ -89,6 +89,17 @@ third_party_settings:
             region: middle
             weight: 0
             uuid: d46cb8a6-ddef-4325-97aa-bc43d091761c
+            context_mapping: {  }
+          a7389e6f-45fb-4a57-8f4f-eda48cd77ddd:
+            id: 'views_block:work_study_opportunities-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 3
+            uuid: a7389e6f-45fb-4a57-8f4f-eda48cd77ddd
             context_mapping: {  }
         id: panels_variant
         label: Default
