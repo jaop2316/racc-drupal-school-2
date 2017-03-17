@@ -325,7 +325,20 @@ display:
           granularity: day
           plugin_id: datetime
       title: 'Current Postings'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p>(For Details Click the Blue Description Title Links)</p>'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -369,6 +382,8 @@ display:
     display_options:
       display_extenders: {  }
       path: current-postings
+      defaults:
+        header: true
     cache_metadata:
       max-age: 0
       contexts:

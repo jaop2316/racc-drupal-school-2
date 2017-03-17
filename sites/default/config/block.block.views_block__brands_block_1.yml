@@ -7,7 +7,7 @@ dependencies:
 id: views_block__brands_block_1
 theme: bartik
 region: '-1'
-weight: -19
+weight: -20
 provider: null
 plugin: 'views_block:brands-block_1'
 settings:

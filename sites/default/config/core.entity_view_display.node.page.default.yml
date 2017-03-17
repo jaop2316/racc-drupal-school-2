@@ -4,37 +4,60 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.panelizer
     - node.type.page
   module:
-    - ds
     - panelizer
     - text
     - user
 third_party_settings:
-  ds:
-    layout:
-      id: onecol
-      path: modules/panels/layouts/onecol
-      library: layout_plugin/onecol
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        classes: {  }
-        wrappers:
-          middle: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-    regions:
-      middle:
-        - body
-        - links
   panelizer:
-    enable: false
-    custom: false
+    enable: true
+    custom: true
     allow: false
     default: default
+    displays:
+      default:
+        blocks:
+          8f4d800e-21e2-478f-9466-ab5d7a98173e:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -10
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 8f4d800e-21e2-478f-9466-ab5d7a98173e
+          7e46584c-a2a5-4b0e-9983-b0b3f3e5a27e:
+            id: 'views_block:current_postings-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 0
+            uuid: 7e46584c-a2a5-4b0e-9983-b0b3f3e5a27e
+            context_mapping: {  }
+        id: panels_variant
+        label: Default
+        uuid: d9384aaf-775c-4c1e-8e71-a67e51455c60
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:page:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
 _core:
   default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
 id: node.page.default
@@ -48,9 +71,17 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
   links:
     weight: 101
     settings: {  }
     third_party_settings: {  }
 hidden:
-  langcode: true
+  panelizer: true

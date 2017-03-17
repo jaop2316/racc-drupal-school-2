@@ -736,14 +736,42 @@ display:
         - 'config:field.storage.node.field_phone_ext'
         - 'config:field.storage.node.field_position'
         - 'config:field.storage.node.field_room'
-  page_1:
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: 'Faculty and Staff'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      use_ajax: true
+      defaults:
+        use_ajax: false
+      display_description: ''
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_departament'
+        - 'config:field.storage.node.field_email'
+        - 'config:field.storage.node.field_mailbox'
+        - 'config:field.storage.node.field_phone_ext'
+        - 'config:field.storage.node.field_position'
+        - 'config:field.storage.node.field_room'
+  faculty_and_staff:
     display_plugin: page
-    id: page_1
+    id: faculty_and_staff
     display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
       path: directory
+      exposed_block: false
     cache_metadata:
       max-age: 0
       contexts:

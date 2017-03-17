@@ -103,13 +103,24 @@ third_party_settings:
             weight: 3
             uuid: e5fa56c7-bbfe-4e33-9b0a-6c315e400f08
             context_mapping: {  }
+          5fb920bc-8a1e-402b-b3fe-3d9c7deacad9:
+            id: 'views_block:directory-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 4
+            uuid: 5fb920bc-8a1e-402b-b3fe-3d9c7deacad9
+            context_mapping: {  }
         id: panels_variant
         label: Default
         uuid: 64aa6e77-87bd-404d-a749-e847260e3f59
         weight: 0
         layout: onecol
         layout_settings: {  }
-        page_title: ''
+        page_title: null
         storage_type: panelizer_default
         storage_id: 'node:basic_page_with_banner:default:default'
         builder: ipe
