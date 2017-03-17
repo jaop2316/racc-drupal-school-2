@@ -39,7 +39,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: 2
+            weight: 3
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: d9b9d2ff-e617-4d2a-9633-cad735643069
@@ -58,7 +58,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: -1
+            weight: 0
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: 33e22038-61a6-405e-bd41-2476b85c4d66
@@ -93,7 +93,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: 0
+            weight: 1
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: 7cb21782-eed6-4423-8dc5-87a78e23bb90
@@ -110,7 +110,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: 1
+            weight: 2
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: 903aadb5-ac02-4aa0-ba6e-285cfd578269
@@ -128,7 +128,7 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: -2
+            weight: -1
             uuid: 3f5e6c33-d3c5-46e1-aab6-1e035a51c0f8
             context_mapping:
               entity: '@panelizer.entity_context:entity'
@@ -149,10 +149,19 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
             region: middle
-            weight: 3
+            weight: 4
             uuid: 25b2b55c-0165-4bad-a1e3-980211cedbf5
             context_mapping:
               entity: '@panelizer.entity_context:entity'
+          586b7f63-8942-43bf-b73b-a1478fa5e865:
+            id: addtoany_block
+            label: 'AddToAny buttons'
+            provider: addtoany
+            label_display: '0'
+            region: middle
+            weight: -2
+            uuid: 586b7f63-8942-43bf-b73b-a1478fa5e865
+            context_mapping: {  }
         id: panels_variant
         label: Default
         uuid: f03afcd9-587c-41f8-8af0-6be4b64e1ea1
@@ -238,4 +247,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   panelizer: true
