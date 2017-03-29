@@ -12,6 +12,7 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  components: 0
   config: 0
   config_translation: 0
   config_update: 0
@@ -70,6 +71,8 @@ module:
   search: 0
   serialization: 0
   shortcut: 0
+  styleguide: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -95,5 +98,8 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
+  racc_theme: 0
+  patternlab: 0
+  racc_pattern_lab: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
