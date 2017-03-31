@@ -17,41 +17,18 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_2col_stacked
-      path: modules/ds
-      library: layout_plugin/ds_2col_stacked
+      id: onecol
+      path: modules/panels/layouts/onecol
+      library: layout_plugin/onecol
       disable_css: false
       entity_classes: all_classes
-      settings:
-        wrappers:
-          header: div
-          left: div
-          right: div
-          footer: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
+      settings: {  }
     regions:
-      left:
+      middle:
         - field_image
-      right:
-        - node_link
         - node_title
         - body
     fields:
-      node_link:
-        plugin_id: node_link
-        weight: 0
-        label: hidden
-        formatter: default
-        settings:
-          'link text': 'STUDENT SPOTLIGHT'
-          'link class': ''
-          wrapper: h1
-          class: ''
       node_title:
         plugin_id: node_title
         weight: 1
@@ -166,6 +143,7 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  addtoany: true
   langcode: true
   links: true
   panelizer: true

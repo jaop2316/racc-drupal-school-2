@@ -5,9 +5,12 @@ dependencies:
   config:
     - block_content.type.copyright
     - field.field.block_content.copyright.body
+    - field.field.block_content.copyright.field_image
     - field.field.block_content.copyright.field_short_text
     - field.field.block_content.copyright.field_title
+    - image.style.thumbnail
   module:
+    - image
     - text
 id: block_content.copyright.default
 targetEntityType: block_content
@@ -22,6 +25,13 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_short_text:
     weight: 3
     settings:
