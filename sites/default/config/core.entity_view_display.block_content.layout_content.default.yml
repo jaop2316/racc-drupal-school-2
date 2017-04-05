@@ -14,24 +14,23 @@ dependencies:
   module:
     - ds
     - image
+    - responsive_image
     - text
     - video_embed_field
 third_party_settings:
   ds:
     layout:
-      id: twocol_stacked
-      path: modules/panels/layouts/twocol_stacked
-      library: layout_plugin/twocol_stacked
+      id: onecol
+      path: modules/panels/layouts/onecol
+      library: layout_plugin/onecol
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      top:
+      middle:
         - field_banner
-      left:
         - field_sidebar_title
         - field_sidebar_body
-      right:
         - field_video_link
         - field_title
         - body
@@ -54,6 +53,14 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+  field_image:
+    type: responsive_image
+    weight: 0
+    label: above
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   field_sidebar_body:
     weight: 2
     label: hidden
@@ -84,6 +91,12 @@ content:
       autoplay: true
     third_party_settings: {  }
     type: video_embed_field_video
-hidden:
-  field_image: true
-  langcode: true
+  langcode:
+    type: language
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+hidden: {  }

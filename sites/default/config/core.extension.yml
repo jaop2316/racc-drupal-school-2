@@ -67,6 +67,7 @@ module:
   quickedit: 0
   rdf: 0
   responsive_image: 0
+  responsive_menu: 0
   rest: 0
   restui: 0
   search: 0

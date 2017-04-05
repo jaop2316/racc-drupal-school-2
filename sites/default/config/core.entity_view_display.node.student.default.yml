@@ -17,21 +17,33 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: onecol
-      path: modules/panels/layouts/onecol
-      library: layout_plugin/onecol
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      middle:
+      left:
         - field_image
+      right:
+        - node_link
         - node_title
         - body
     fields:
+      node_link:
+        plugin_id: node_link
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'STUDENT SPOTLIGHT'
+          'link class': ''
+          wrapper: h2
+          class: ''
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
   panelizer:
@@ -130,7 +142,7 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 3
     settings:
       trim_length: 600
     third_party_settings: {  }

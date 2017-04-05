@@ -12,7 +12,7 @@ dependencies:
 id: mainnavigation_13
 theme: racc_pattern_lab
 region: '-1'
-weight: -5
+weight: -3
 provider: null
 plugin: 'superfish:main'
 settings:

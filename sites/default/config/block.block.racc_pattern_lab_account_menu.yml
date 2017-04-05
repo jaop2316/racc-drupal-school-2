@@ -13,7 +13,7 @@ _core:
 id: racc_pattern_lab_account_menu
 theme: racc_pattern_lab
 region: '-1'
-weight: 2
+weight: 3
 provider: null
 plugin: 'system_menu_block:account'
 settings:

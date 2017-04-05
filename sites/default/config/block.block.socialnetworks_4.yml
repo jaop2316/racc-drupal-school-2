@@ -12,7 +12,7 @@ dependencies:
 id: socialnetworks_4
 theme: racc_pattern_lab
 region: '-1'
-weight: 3
+weight: 1
 provider: null
 plugin: 'superfish:social-networks'
 settings:

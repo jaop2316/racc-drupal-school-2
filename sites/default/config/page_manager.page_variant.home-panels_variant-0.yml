@@ -71,7 +71,7 @@ variant_settings:
       id: 'views_block:students-homepage_students'
       label: ''
       provider: views
-      label_display: visible
+      label_display: '0'
       views_label: ''
       items_per_page: none
       region: middle
